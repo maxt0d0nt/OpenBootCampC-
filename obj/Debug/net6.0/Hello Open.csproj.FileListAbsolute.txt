@@ -1,0 +1,15 @@
+C:\Users\Arianna\Desktop\Hello Open\bin\Debug\net6.0\Hello Open.exe
+C:\Users\Arianna\Desktop\Hello Open\bin\Debug\net6.0\Hello Open.deps.json
+C:\Users\Arianna\Desktop\Hello Open\bin\Debug\net6.0\Hello Open.runtimeconfig.json
+C:\Users\Arianna\Desktop\Hello Open\bin\Debug\net6.0\Hello Open.dll
+C:\Users\Arianna\Desktop\Hello Open\bin\Debug\net6.0\Hello Open.pdb
+C:\Users\Arianna\Desktop\Hello Open\obj\Debug\net6.0\Hello Open.csproj.AssemblyReference.cache
+C:\Users\Arianna\Desktop\Hello Open\obj\Debug\net6.0\Hello Open.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arianna\Desktop\Hello Open\obj\Debug\net6.0\Hello Open.AssemblyInfoInputs.cache
+C:\Users\Arianna\Desktop\Hello Open\obj\Debug\net6.0\Hello Open.AssemblyInfo.cs
+C:\Users\Arianna\Desktop\Hello Open\obj\Debug\net6.0\Hello Open.csproj.CoreCompileInputs.cache
+C:\Users\Arianna\Desktop\Hello Open\obj\Debug\net6.0\Hello Open.dll
+C:\Users\Arianna\Desktop\Hello Open\obj\Debug\net6.0\refint\Hello Open.dll
+C:\Users\Arianna\Desktop\Hello Open\obj\Debug\net6.0\Hello Open.pdb
+C:\Users\Arianna\Desktop\Hello Open\obj\Debug\net6.0\Hello Open.genruntimeconfig.cache
+C:\Users\Arianna\Desktop\Hello Open\obj\Debug\net6.0\ref\Hello Open.dll
