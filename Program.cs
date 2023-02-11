@@ -1,4 +1,5 @@
-﻿// ejercicio 1
+﻿
+// ejercicio 1
 Console.WriteLine("¿Como te llamas?");
 var name = Console.ReadLine();
 Console.WriteLine("Tu nombre es " + name);
@@ -87,4 +88,28 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("El primer numero es mayor a cero (" + num +"), por lo que la suma de ambos es (" + (num +num2) + ") y se cumple el OR, primer numero mayor a cero o la suma de ambos menor a 0 =>" + (num + num2 < 0 || num > 0));
 
 
+//TEMA 3
+Cliente cliente = new Cliente("Max", 123456, "varsovia", "Max@email.com", "si");
+Console.WriteLine(cliente);
 
+public struct Cliente 
+{
+
+ public Cliente(string x, int y, string z, string i, string j)
+{
+NombreCompleto = x;
+Telefono = y;
+Direccion = z;
+Email = i;
+EsNuevoCliente = j;
+    }
+    public string NombreCompleto { get; set; }
+    public int Telefono { get; set; }
+    public string Direccion { get; set; }
+    public string Email { get; set; }
+    public string EsNuevoCliente { get; set; }
+
+
+public override string ToString() => $"{NombreCompleto} {Telefono} {Direccion} {Email} {EsNuevoCliente}";
+
+ }
