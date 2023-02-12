@@ -1,4 +1,4 @@
-﻿
+﻿/*
 // ejercicio 1
 Console.WriteLine("¿Como te llamas?");
 var name = Console.ReadLine();
@@ -113,3 +113,149 @@ EsNuevoCliente = j;
 public override string ToString() => $"{NombreCompleto} {Telefono} {Direccion} {Email} {EsNuevoCliente}";
 
  }
+*/
+/*
+//Tema 4
+// ejercicio 1 - while
+Console.WriteLine("¿que tabla de multiplicar desea obtener? escriba numero:");
+int tabla = Convert.ToInt32(Console.ReadLine());
+
+int i = 0;
+
+while (i <= 10) {
+    int resultado = 0;
+    resultado = tabla * i;
+    Console.WriteLine(tabla + " X " + i + " = " + resultado);
+    i++;
+} 
+
+//ejercicio 2 - do-while
+Console.WriteLine("escriba un numero:");
+int numA = Convert.ToInt32(Console.ReadLine());
+bool positivo = (numA > 0);
+Console.WriteLine("el numero positivo: " + (numA > 0));
+bool negativo = (numA < 0);
+Console.WriteLine("el numero negativo: " + (numA < 0));
+Console.WriteLine("el numero es cero: " + (numA == 0));
+int cont = 0;
+while (positivo && cont <= numA)
+
+{
+    
+    do
+{
+Console.WriteLine(cont);
+    cont++;
+} 
+while (cont <= numA);
+}
+
+while (negativo && cont >= numA)
+
+{
+    
+    do
+{
+Console.WriteLine(cont);
+    cont--;
+} 
+while (cont >= numA);
+}
+
+//ejercicio 3
+Escribe un programa que realice estos pasos:
+
+Reciba 3 datos:
+
+ancho
+
+alto
+
+relleno o no
+
+Dibuje en consola con un mismo caracter, por ejemplo *, un rectángulo de las dimensiones introducidas y use el tercer dato para discernir si el rectángulo está relleno (tiene más * dentro) o no.
+
+En caso de recibir el mismo número n dos veces debe dibujar un cuadrado de lado n.
+
+Reto: Extiende el programa anterior para recibir otro número que sea el número de cuadrados o rectángulos que se deben dibujar en la pantalla. Ejemplos:
+
+Input: 2,2,2, relleno = true
+
+Output:
+
+** **
+
+** **
+
+Input: 3, 4, 1, relleno = false
+
+Output:
+
+***
+
+* *
+
+* *
+
+***
+
+*/
+Console.WriteLine("escriba el largo que desee tener en su figura:");
+int large = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("escriba el ancho que desee tener en su figura::");
+int width = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("escriba 1 si desea sea reeleno; escriba 2 si desea sea vacio");
+int fill = Convert.ToInt32(Console.ReadLine());
+
+//borde superior
+for (int i = 0; i < large; i++)
+{
+    Console.Write("*");
+}
+Console.WriteLine("");
+int p = 0;
+
+//vacio
+while (fill == 1 && p < width - 2)
+
+    do
+    {
+
+        Console.Write("*");
+        for (int h = 0; h < large - 2; h++)
+        {
+            Console.Write(" ");
+        }
+        Console.WriteLine("*");
+        p++;
+    } while (p < width - 2);
+
+//relleno
+while (fill == 2 && p < width)
+    do
+    {
+
+        for (int z = 0; z < width; z++)
+            p++;
+        {
+            for (int k = 0; k < width - 2; k++)
+            {
+
+
+                for (int h = 0; h < large; h++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("");
+            }
+
+        }
+    } while (p < width);
+
+//borde inferior
+
+for (int j = 0; j < large; j++)
+{
+    Console.Write("*");
+}
+
