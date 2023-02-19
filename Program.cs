@@ -163,43 +163,7 @@ while (cont >= numA);
 }
 
 //ejercicio 3
-Escribe un programa que realice estos pasos:
 
-Reciba 3 datos:
-
-ancho
-
-alto
-
-relleno o no
-
-Dibuje en consola con un mismo caracter, por ejemplo *, un rectángulo de las dimensiones introducidas y use el tercer dato para discernir si el rectángulo está relleno (tiene más * dentro) o no.
-
-En caso de recibir el mismo número n dos veces debe dibujar un cuadrado de lado n.
-
-Reto: Extiende el programa anterior para recibir otro número que sea el número de cuadrados o rectángulos que se deben dibujar en la pantalla. Ejemplos:
-
-Input: 2,2,2, relleno = true
-
-Output:
-
-** **
-
-** **
-
-Input: 3, 4, 1, relleno = false
-
-Output:
-
-***
-
-* *
-
-* *
-
-***
-
-*/
 Console.WriteLine("escriba el largo que desee tener en su figura:");
 int large = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("escriba el ancho que desee tener en su figura::");
@@ -259,3 +223,65 @@ for (int j = 0; j < large; j++)
     Console.Write("*");
 }
 
+*/
+
+//TEMA 5
+//Bucles II
+
+//Ejercicio 1 - If
+
+Console.WriteLine("escriba el nombre del cliente:");
+var name = Console.ReadLine();
+Console.WriteLine("escriba el email del cliente:");
+var email = Console.ReadLine();
+Console.WriteLine("¿Tiene un cupon de descuento?");
+var cupon = Console.ReadLine();
+var boolValue = cupon == "si" ? true : false; //returns true
+Console.WriteLine("Precio del producto");
+var precio = Convert.ToInt32(Console.ReadLine());
+
+if(boolValue){
+var  descuento = precio - (precio * 0.10);
+Console.WriteLine();
+Console.WriteLine("Cliente: " + name);
+Console.WriteLine("email del Cliente: " + email);
+Console.WriteLine();
+Console.WriteLine("tienes un descuento del 10%");
+Console.WriteLine("Precio del producto es de " + descuento);
+} else {
+    Console.WriteLine();
+Console.WriteLine("Cliente: " + name);
+Console.WriteLine("email del Cliente: " + email);
+Console.WriteLine();
+Console.WriteLine("Precio del producto es de " + precio);
+}
+
+
+//Ejercicio 2 - Switch
+
+Console.WriteLine("¿Que lenguaje de programacion conoce?");
+Console.WriteLine("marque 1 si C#");
+Console.WriteLine("marque 2 si JAVA");
+Console.WriteLine("marque 3 si PHYTON");
+Console.WriteLine("marque cualquier tecla si otro");
+var lenguaje = Convert.ToInt32(Console.ReadLine());
+
+
+Console.WriteLine();
+Console.WriteLine("el lenguaje que conoce es:");
+switch (lenguaje)
+{
+
+   case 1:
+      Console.WriteLine("C#");
+   break;
+   case 2:
+      Console.WriteLine("JAVA");
+   break;
+   case 3:
+     Console.WriteLine("PHYTON");
+   break;
+   default:
+      Console.WriteLine("OTRO");
+   break;
+}
